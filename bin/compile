@@ -20,7 +20,8 @@ unset GIT_DIR
 write_profile() {
   local root_dir="$1"
   # This assumes that Heroku initially looks for profiles at the $HOME folder, which it does
-  local subdir="$HOME/$2"
+  # The $HOME variable must be escaped, so that its value is resolved at runtime and not now.
+  local subdir="\$HOME/$2"
   mkdir -p $root_dir/.profile.d
 
   # Set the home directory to be the subdir and source all profiles that
