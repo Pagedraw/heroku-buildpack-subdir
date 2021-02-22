@@ -1,3 +1,6 @@
+# STATUS: DEPRECATED AND UNMAINTAINED
+This package is deprecated. Please use https://github.com/timanovsky/subdir-heroku-buildpack or https://github.com/lstoll/heroku-buildpack-monorepo.
+
 # Heroku Buildpack Select Subdir
 
 Allows you to have a monolithic repo with multiple Heroku apps in different subdirectories (like Google!).
